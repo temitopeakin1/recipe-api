@@ -1,0 +1,10 @@
+const app = require("/app");
+const logger = require("/utils/logger");
+const config = require("../utils/config");
+const connectMongoDB = require("./db/mongodb");
+
+
+app.listen(config.PORT, () => {
+    connectMongoDB();
+    logger.info(`Server is ready and running on port: ${config.PORT}`);
+})
