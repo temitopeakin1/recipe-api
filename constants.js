@@ -1,4 +1,5 @@
 export const constants = {
+    CREATED: 201,
     VALIDATION_ERROR: 400,
     UNAUTHORIZED: 401,
     FORBIDDEN: 403,
