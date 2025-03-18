@@ -81,6 +81,7 @@ const recipeSchema = new mongoose.Schema(
     },
     cuisine: {
       type: String,
+      enum: ["Italian", "Mexican", "Chinese", "Indian"],
       required: true,
     },
     difficulty: {

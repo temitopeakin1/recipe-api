@@ -24,7 +24,7 @@ const app = express();
 app.use(express.json({ limit: '5mb' }));
 app.use(morgan('dev'));
 
-app.disable('x-powered-by'); // Disable server fingerprinting
+app.disable('x-powered-by'); // Disable express server fingerprinting
 
 // Importing routes
 const indexRoutes = require('./routes');
@@ -32,4 +32,8 @@ const indexRoutes = require('./routes');
 // Use the imported router
 app.use('/api/v1', indexRoutes);
 
+
 module.exports = app;
+
+
+

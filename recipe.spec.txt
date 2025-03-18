@@ -2,12 +2,12 @@ Functional Requirements
 - Users can login  ✅
 - Users can register  ✅
 - Only registered users can create recipes ✅
-- Users can categories recipes
-- Users can share recipes
-- Users can search recipes
-- Only recipe owner can modify/ update recipes
-- Only recipe owner can delete recipes
-- Users can comment/ rate recipes
+- Users can categories recipes ✅
+- Users can share recipes ✅
+- Users can search recipes ✅
+- Only recipe owner can modify/ update recipes ✅
+- Only recipe owner can delete recipes ✅
+- Users can comment/ rate recipes ✅
 
 Non-Functional Requirements
 - Response time should be below 50ms

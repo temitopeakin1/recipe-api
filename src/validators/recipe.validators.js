@@ -41,6 +41,7 @@ const schema = joi.object ({
     numberOfServings: joi.number().required(),
     category: joi.string().required(),
     cuisine: joi.string().required(),
+    difficulty: joi.string().required(),
     image: joi.string(),
 });
 

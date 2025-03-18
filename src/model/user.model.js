@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema(
     },
     recipes: [
       {
+        // ObjectId is a special type in MongoDB, which is used for referencing documents in other collections.
         type: ObjectId, // the use of ObjectId
         ref: 'Recipe',
       },
@@ -28,4 +29,8 @@ const userSchema = new mongoose.Schema(
   },
 )
 
-module.exports = mongoose.model('User', userSchema);
+
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
+// module.exports = mongoose.model('User', userSchema);
